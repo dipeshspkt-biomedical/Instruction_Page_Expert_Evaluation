@@ -8,8 +8,8 @@
 
 import marimo
 
-__generated_with = "0.23.2"
-app = marimo.App(width="medium")
+__generated_with = "0.23.9"
+app = marimo.App(width="full")
 
 
 @app.cell
@@ -24,6 +24,18 @@ def _():
     from ipyniivue import NiiVue, MultiplanarType, ShowRender
 
     return MultiplanarType, NiiVue, ShowRender
+
+
+@app.cell
+def _(mo):
+    mo.center(mo.md("# **Instruction for Evaluation of Segmentation Mask of Hippocampus Segmentation**"))
+    return
+
+
+@app.cell
+def _(mo):
+    mo.center(mo.md("## Please read the following instructions carefully"))
+    return
 
 
 @app.cell
